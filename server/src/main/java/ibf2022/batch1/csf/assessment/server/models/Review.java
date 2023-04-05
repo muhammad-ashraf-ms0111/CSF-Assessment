@@ -1,5 +1,8 @@
 package ibf2022.batch1.csf.assessment.server.models;
 
+
+
+
 // DO NOT MODIFY THIS CLASS
 public class Review {
 	// display_title
@@ -49,4 +52,5 @@ public class Review {
 	public String toString() {
 		return "Review{title:%s, rating:%s}".formatted(title, rating);
 	}
+
 }

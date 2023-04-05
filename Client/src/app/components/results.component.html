@@ -1,0 +1,7 @@
+<h1>Search Results</h1>
+
+<ul>
+  <li *ngFor="let m of movies">
+    <a [routerLink]="['/comments', m.title]">{{ m.title }}</a>
+  </li>
+</ul>
