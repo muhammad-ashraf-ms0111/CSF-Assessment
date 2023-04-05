@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -26,7 +26,10 @@ export class SearchComponent implements OnInit, OnDestroy {
 
   private createForm(): FormGroup {
     return this.formBuilder.group({
-      query: this.formBuilder.control(''),
+      query: this.formBuilder.control<string>('', [
+        Validators.required,
+        Validators.minLength(2),
+      ]),
     });
   }
 }
