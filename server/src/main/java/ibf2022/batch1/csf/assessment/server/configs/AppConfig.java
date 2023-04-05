@@ -1,4 +1,4 @@
-package ibf2022.batch1.csf.assessment.server.configFiles;
+package ibf2022.batch1.csf.assessment.server.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

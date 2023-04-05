@@ -3,4 +3,5 @@ export interface Movies {
   rating: string;
   headline: string;
   summary: string;
+  reviewURL: string;
 }
